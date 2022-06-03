@@ -1,0 +1,14 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.jupytext]
+formats = "ipynb,py:percent"
+
+[isort]
+multi_line_output = 3
+combine_as_imports = true
