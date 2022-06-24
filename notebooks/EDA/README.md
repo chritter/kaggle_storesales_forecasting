@@ -8,6 +8,7 @@ cannot be used as daily features for the test data, only as aggregates.
 why exactly the transactions are missing. Hence do not include this
 feature in modelling.
 
+
 * > Did not all start a the same time. Data is not avialalbe for all stores equally.
 A few stores start selling products later in 2013, or even 2014, 2015 and 2017.
 For these stores less data will be available for predictions
@@ -41,9 +42,22 @@ weight  those higher in simple average!
 
 Reduce data to most promising stores/families:
 
+### Data Type A
+
 * include only Quito city
 * Family constraints:
-    * exclude books family
+    * exclude BOOKS, LAWN AND GARDEN, SCHOOL & OFFICE SUPPLIES (3 FAMILIES)
+* time constraints
+    * all data starting August 1st, 2016
+* exclude stores sales for specific families for which the start of selling is later than Augst 1st 2016 (see how many)
+
+### Type B
+
+Deal with outliers, other data to categorize
+
+    * BEVERAGES, FAMILIY CElEBRATION: Jul 2015
+    DAIRY: DEC 13
+    * HOME & KITCHEN I: OCT 2013
     * exclude HOME CARE before mid 2015
 * exclude stores which start selling in 2017
 * categorize (store, family) tuples into candidates for modeling and those
